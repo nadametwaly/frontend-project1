@@ -1,0 +1,48 @@
+import Course from "./course";
+
+export const courses = [
+  new Course(
+    "1",
+    "Data Structures",
+    "http://",
+    "Data Structure is a way of collecting and organising data in such a way that we can perform operations on these data in an effective way. Data Structures is about rendering data elements in terms of some relationship, for better organization and storage.",
+    "Complexity analysis + Array + Amortized Complexity analysis + Dynamic arrayLinked list (Singly and Doubly)Stack + Queue",
+    "Programming in C or C++",
+    "Eng. Abo-Elhamd Ali",
+    7,
+    50,
+  ),
+  new Course(
+    "2",
+    "Data Structures",
+    "http://",
+    "Data Structure is a way of collecting and organising data in such a way that we can perform operations on these data in an effective way. Data Structures is about rendering data elements in terms of some relationship, for better organization and storage.",
+    "Complexity analysis + Array + Amortized Complexity analysis + Dynamic arrayLinked list (Singly and Doubly)Stack + Queue",
+    "Programming in C or C++",
+    "Eng. Abo-Elhamd Ali",
+    7,
+    50,
+  ),
+  new Course(
+    "3",
+    "Data Structures",
+    "http://",
+    "Data Structure is a way of collecting and organising data in such a way that we can perform operations on these data in an effective way. Data Structures is about rendering data elements in terms of some relationship, for better organization and storage.",
+    "Complexity analysis + Array + Amortized Complexity analysis + Dynamic arrayLinked list (Singly and Doubly)Stack + Queue",
+    "Programming in C or C++",
+    "Eng. Abo-Elhamd Ali",
+    7,
+    50,
+  ),
+  new Course(
+    "4",
+    "Data Structures",
+    "http://",
+    "Data Structure is a way of collecting and organising data in such a way that we can perform operations on these data in an effective way. Data Structures is about rendering data elements in terms of some relationship, for better organization and storage.",
+    "Complexity analysis + Array + Amortized Complexity analysis + Dynamic arrayLinked list (Singly and Doubly)Stack + Queue",
+    "Programming in C or C++",
+    "Eng. Abo-Elhamd Ali",
+    7,
+    50,
+  ),
+];
