@@ -1,5 +1,4 @@
 class Course {
-  id;
   title;
   description;
   content;
@@ -8,7 +7,6 @@ class Course {
   duration;
   feeds;
   constructor(
-    id,
     title,
     image,
     description,
@@ -18,7 +16,6 @@ class Course {
     duration,
     feeds,
   ) {
-    this.id = id;
     this.title = title;
     this.image = image;
     this.description = description;
