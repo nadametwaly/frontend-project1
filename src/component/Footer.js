@@ -26,6 +26,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
+        <p>© Copyright 2022 IEEE SSCS</p>
       </div>
     </footer>
   );

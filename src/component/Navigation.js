@@ -1,8 +1,6 @@
 import Logo from "./Logo";
 import "../styles/navbar.css";
 import NavLinks from "./NavLinks";
-import { GiHamburgerMenu } from "react-icons/gi";
-
 const Navigation = () => {
   return (
     <div className="navigat">

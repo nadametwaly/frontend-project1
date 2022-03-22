@@ -1,5 +1,4 @@
 import NavLinks from "./NavLinks";
-import Logo from "./Logo";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaWindowClose } from "react-icons/fa";
 import { useState } from "react";
