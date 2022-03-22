@@ -25,6 +25,11 @@ a {
   float: right;
   margin-right: 20px;
   margin-bottom: 20px;
+  margin-left: 20px;
+  display: grid;
+}
+.footer-list-top p {
+  color: #fff;
 }
 .footer-list-top ul {
   list-style: none;
@@ -39,10 +44,10 @@ a {
 .footer-list-header {
   padding: 10px 0 5px 0;
   color: #fff;
-  font: 2.3vw "Oswald", sans-serif;
+  font: 25px "Oswald", sans-serif;
 }
 .footer-list-anchor {
-  font: 1.3em "Open Sans", sans-serif;
+  font: 15px "Open Sans", sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
@@ -71,7 +76,7 @@ a {
     font-size: 20px;
   }
   .footer-list-anchor {
-    font-size: 1.5em;
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 320px) {

@@ -7,6 +7,7 @@
   background-image: url("/public/images/home-background.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: block;
   padding-bottom: 60px;
 }
 .logo-contanier {
@@ -44,7 +45,8 @@
   color: #fff;
   padding: 20px;
   margin: 40px;
-  width: 400px;
+  width: 500px;
+  height: 120px;
   line-height: 30px;
   border: none;
   border-radius: 15px;
@@ -54,6 +56,19 @@
 }
 .vision {
   float: right;
+}
+@media (max-width: 990px) {
+  .start-text {
+    width: 600px;
+
+    display: inline-block;
+  }
+  .mission {
+    float: none;
+  }
+  .vision {
+    float: none;
+  }
 }
 @media (max-width: 450px) {
   .logo-contanier {
