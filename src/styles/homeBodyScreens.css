@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.home-body-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("/public/images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-body-container p {
+  position: relative;
+  margin: 100px 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+  height: 200px;
+  font-weight: 300;
+}
+@media (max-width: 450px) {
+  .home-body-container p {
+    font-size: 18px;
+    height: 300px;
+    margin: 80px 20px;
+  }
+}
