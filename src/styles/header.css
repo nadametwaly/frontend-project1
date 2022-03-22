@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header-contanier {
+  background-color: #0f1013;
+  height: 80px;
+  color: #ba0c2f;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header-contanier h1 {
+  font-weight: 800px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}

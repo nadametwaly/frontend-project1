@@ -1,6 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .logo-container {
   position: absolute;
   width: 405px;
   height: 70px;
   background: #ba0c2f;
+}
+@media (max-width: 990px) {
+  .logo-container {
+    width: 300px;
+  }
 }

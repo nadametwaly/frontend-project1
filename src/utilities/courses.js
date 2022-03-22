@@ -4,7 +4,6 @@ export const courses = [
   {
     id: 1,
     course: new Course(
-      "1",
       "Data Structures",
       "http://",
       "Data Structure is a way of collecting and organising data in such a way that we can perform operations on these data in an effective way. Data Structures is about rendering data elements in terms of some relationship, for better organization and storage.",
@@ -18,7 +17,6 @@ export const courses = [
   {
     id: 2,
     course: new Course(
-      "2",
       "Data Structures",
       "http://",
       "Data Structure is a way of collecting and organising data in such a way that we can perform operations on these data in an effective way. Data Structures is about rendering data elements in terms of some relationship, for better organization and storage.",
@@ -32,7 +30,6 @@ export const courses = [
   {
     id: 3,
     course: new Course(
-      "3",
       "Data Structures",
       "http://",
       "Data Structure is a way of collecting and organising data in such a way that we can perform operations on these data in an effective way. Data Structures is about rendering data elements in terms of some relationship, for better organization and storage.",
@@ -46,7 +43,6 @@ export const courses = [
   {
     id: 4,
     course: new Course(
-      "4",
       "Data Structures",
       "http://",
       "Data Structure is a way of collecting and organising data in such a way that we can perform operations on these data in an effective way. Data Structures is about rendering data elements in terms of some relationship, for better organization and storage.",
