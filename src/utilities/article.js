@@ -1,14 +1,17 @@
 class Article {
   title;
   image;
-  description;
-  references;
-  constructor(title, image, description, references) {
+  date;
+  
+  constructor(
+    title,
+    image,
+    date)
+  {
     this.title = title;
     this.image = image;
-    this.description = description;
-    this.references = references;
+    this.date = date;
+    
   }
 }
-
 export default Article;

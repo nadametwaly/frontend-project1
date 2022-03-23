@@ -10,7 +10,7 @@ const NavLinks = () => {
         <Link to="/chipions">Chipions</Link>
       </li>
       <li>
-        <Link to="/article">Our Article</Link>
+        <Link to="/article">Our Articles</Link>
       </li>
       <li>
         <Link to="/committes">Committes</Link>

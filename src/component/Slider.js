@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/slider.css";
 import Slide from "./Slide";
-import { articles } from "../utilities/articles";
+import  articles  from "../utilities/AllArticles";
 import { BsArrowRightCircleFill, BsArrowLeftCircleFill } from "react-icons/bs";
 const Slider = () => {
   const [current, setCurrent] = useState(0);
