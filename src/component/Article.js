@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-const Article = (article) => {
+const Article = (props) => {
     return (  
         <div className="ALLARTICLE">
-            <img src={article.article.image}></img>
-            <h2>{article.article.title}</h2>
-            <p>{article.article.date}</p>
+            <img src={props.image}></img>
+            <h2>{props.title}</h2>
+            <p>{props.date}</p>
         </div>
      
     );

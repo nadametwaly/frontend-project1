@@ -2,15 +2,18 @@ class Article {
   title;
   image;
   date;
+  description;
   
   constructor(
     title,
     image,
-    date)
+    date,
+    description)
   {
     this.title = title;
     this.image = image;
     this.date = date;
+    this.description = description;
     
   }
 }
