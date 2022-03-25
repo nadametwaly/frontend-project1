@@ -5,7 +5,7 @@ class Course {
   perquisittes;
   instructor;
   duration;
-  feeds;
+  fees;
   constructor(
     title,
     image,
@@ -14,7 +14,7 @@ class Course {
     perquisittes,
     instructor,
     duration,
-    feeds,
+    fees,
   ) {
     this.title = title;
     this.image = image;
@@ -23,7 +23,7 @@ class Course {
     this.perquisittes = perquisittes;
     this.instructor = instructor;
     this.duration = duration;
-    this.feeds = feeds;
+    this.fees = fees;
   }
 }
 
