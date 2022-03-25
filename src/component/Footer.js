@@ -8,7 +8,7 @@ const Footer = () => {
       </div>
       <div className="footer-list-top">
         <ul className="nav-list">
-          <h4 className="footer-list-header">CONNECT WITH US</h4>
+          <h4 className="footer-list-header">CONTACT WITH US</h4>
           <li>
             <a
               href="/Angels/cat/id/70"
