@@ -1,0 +1,51 @@
+.AllArticleDetails{
+    height:180vh;
+    background-image: url("/public/images/Articles-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ArticleDetails {
+    background-color: rgba(15, 16, 19, 0.6);
+    width:1055px;
+    margin-left: 15%;
+    padding-top: 3%;
+}
+.ArticleDetails img{
+    width: 50px;
+    text-align: left;
+    border-radius: 50%;
+    float:left;
+    margin-left: 7%;
+    margin-top: 5%;
+}
+
+.ArticleDetails p{
+    color: white;
+    font-family: Open Sans;
+    font-style: Mixed;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+    padding: 5%;
+    padding-bottom: 10%;
+    background-color: rgba(15, 16, 19, 0.6);
+    width:950px;
+    margin-right: 15%;
+
+}
+.ArticleDetails h2{
+    color: #ba0c2f;
+    font-family: open Sans;
+    font-style: Mixed;
+    Font-size: 22px;
+    margin-left: 8%;
+    padding-top: 6.3%;
+    margin-left: 8%;
+    padding-left: 6%;
+    padding-bottom: 2%;
+    Line-height: 30px;
+    Line-height: 100%;
+    Align: Left;
+    letter-spacing: -2%;
+}
+
