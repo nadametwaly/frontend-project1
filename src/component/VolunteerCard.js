@@ -9,9 +9,8 @@ const VolunteerCard = (props) => {
             <img src={props.image} alt=""></img>
             <div className="text">
                 <h1>{props.name}</h1>
-                <a href={props.Facebook}><AiFillFacebook className='facebookIcon' /></a>
-                <a href={props.linkedIn}><AiFillLinkedin className='linkedinIcon' /></a>
-                
+                <a href={props.contact}><AiFillFacebook className='facebookIcon' /></a>
+                <a href={props.contact}><AiFillLinkedin className='linkedinIcon' /></a>
             </div>
         </div>
     );

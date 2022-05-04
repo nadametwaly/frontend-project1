@@ -8,11 +8,16 @@
     background-image: url("/public/images/home-background.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    
+    min-height: 75vh;
 }
 
-.Container .CommittesContainer {
-    padding: 100px 50px;
+.Container .AllCommities .heading{
+    text-transform: uppercase;
+    color: #ba0c2f;
+}
+
+.Container .CommitteContainer {
+    padding: 0 50px 100px 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
     grid-column-gap: 20px;
