@@ -12,13 +12,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
-<<<<<<< HEAD
         <Route path="/Courses" element={<AllCourses/>}/>
         <Route path="/Courses/:id" element={<CourseDetails/>}/>
-=======
-        <Route path="/articles" element={<ArticlesScreen />} />
-        <Route path="/articles/:id" element={<ArticleDetails />} />
->>>>>>> 962dfc583cda5477f21d83492c9d17372f72258c
       </Routes>
       <Footer />
     </Router>

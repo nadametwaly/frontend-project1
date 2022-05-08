@@ -1,55 +1,76 @@
 import { useParams } from "react-router-dom";
-import { courses } from "../utilities/courses";
+import React ,{useEffect, useState} from 'react';
+import axios from "axios";
 
 const CourseDetails = () => {
-  const params = useParams();
-  return(
+const params= useParams()
+
+const [course, setcourse] = useState([])
+const url = `https://ieeeswalexsc.herokuapp.com/api/courses/${params.id}`
+
+  const getData = () => {
+    axios.get(url)
+        .then((res) => {
+      //    console.log(res.data.data)
+          setcourse(res.data.data.attributes);             
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+    }
+
+  useEffect(() => {
+    getData()
+  }, [])
+
+  //console.log(course)
+return(
    <div className="details">
-        <div className="detail">
-        
+      <div className="detail">
             <div className="title">
-                {courses[params.id - 1].course.title}
+                {course.title}
             </div>
 
             <div className="im-desc">
-                    <div >
-                        <img id="image" src="https://images.ctfassets.net/be04ylp8y0qc/6rvh9VwMd69EffYHq2AX2o/9cf6f4eaa592679e9c27c526e3139d77/opencv_square.png?fm=webp&w=510&h=510" alt="course logo"/>
+                    <div>
+                        <img id="image" src={course.image} alt="course logo"/>
                     </div>
                     <div className="description">
                       <h3 id="TOD">Description</h3>
-                      {courses[params.id - 1].course.description}
+                      {course.description}
                     </div>
               </div>
               
-            <div className="content">
+            <div className="cod">
               <h3 id="TOD">Content</h3>
-              {courses[params.id - 1].course.content}
+              {course.content}
             </div>
-            <div className="perquisittes">
+            <div className="cod">
               <h3 id="TOD">Prerequisites</h3>
-              {courses[params.id - 1].course.perquisittes}
+              {course.prerequisites}
             </div>
 
-            <div className="instructor">
+            <div className="cod">
               <h3 id="TOD">Instructor</h3>
-              {courses[params.id - 1].course.instructor}
+              {course.instructor}
             </div>
             
-            <div className="duration">
+            <div className="cod">
               <h3 id="TOD">Duration :</h3>
-              {courses[params.id - 1].course.duration}
+              {course.length} Hours
             </div>
 
-            <div className="fees">
+            <div className="cod">
               <h3 id="TOD">Fees :</h3>
-              {courses[params.id - 1].course.fees}
+              {course.fees} $
               </div>   
                
-            <div id="button-container">
+            
             <button id="button">Sign Up</button>
-            </div>
+            
             
         </div>
+
   </div>
     );
 };
