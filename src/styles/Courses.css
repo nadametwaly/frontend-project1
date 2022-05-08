@@ -1,69 +1,135 @@
-body {
-  background-image: url("/public/images/background.svg");
+
+
+*{background-image: url('/public/images/background.svg');}
+
+.all-courses-contanier{
+background-image: url('/public/images/background.svg');
+margin: 20px 160px 160px 160px ;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-auto-rows: 250px;
+position: relative;
+gap: 120px 120px ;
+background: rgba(0, 0, 0, 0);
+}
+.course-contanier{
+text-align: left;
+position: static;
+width: 400px;
+height: 320px;
+border: 1px solid #0e0303;
+box-sizing: border-box;
+box-shadow: inset 2px 4px 2px rgba(0, 0, 0, 0.0);
+overflow-y: hidden ;
+overflow-x: hidden;
+border-radius:40px;
+background:  rgb(255, 255, 255.0);
+
+}
+.course-contanier:hover{
+opacity: 0.5;
 }
 
-.all-courses-contanier {
-  background-image: url("/public/images/background.svg");
-  margin: 20px 160px 160px 160px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 250px;
-  position: relative;
-  gap: 120px 120px;
-  background: rgba(0, 0, 0, 0);
+
+/* COURSES CARD */
+
+/* image of course card div */
+.img{
+    border-top-right-radius:40px;
+    border-top-left-radius:40px; 
+    background:  rgba(0, 0, 0, 0);
+  
+  }
+  /* for image od course card id */
+  #img{
+    width: 100%;
+    height: 150px ;
+    overflow: hidden;
+  
+  }
+  /*title of course shown in course card */
+  #tit { 
+    background: #ffffff;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    color:#130F0F;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  /*  instructor shown in course card */
+  #inst{
+    background: #ffffff;
+    text-decoration: none;
+    color:#130F0F;
+    font-weight: normal;
+    margin-left: 10px;
+  }
+  #fee{
+    background:  rgb(255, 255, 255.0);
+    text-align:left;
+    margin-left: 10px;
+    color: #0e0303;
+  
+  }
+  
+  #best{
+    background: orange;
+    width: 60px;  height: 5px;
+    font-size: 12px;
+    float:left;
+    color: #0e0303;
+    margin-left: 10px; margin-top: 10px;
+    text-align: center;
+    border-radius: 20px;
+    
+  }
+/*RATING */
+.checked {
+  color: orange;
+}
+.ratting{
+  float: right;
+  margin-right: 20px;
+  background: #ffffff;
+  color: #313131;
+  width: 100px;
+}
+span{
+  background: #f7eeee;
 }
 
-.course-contanier {
-  text-align: center;
-  position: static;
-  width: 350px;
-  height: 300px;
-  border: 1px solid #0e0303;
-  box-sizing: border-box;
-  box-shadow: inset 2px 4px 2px rgba(0, 0, 0, 0);
-  overflow-y: hidden;
-  border-radius: 40px;
-  background: rgb(255, 255, 255);
+h5{
+  float: left;
+  background: #ffff;
+  color: orangered;
+  margin-right: 5px;
 }
-.course-contanier:hover {
-  opacity: 0.5;
+h6{
+  float: center;
+  background: #ffff;
+  color: #0e0303;
+  
 }
-.img {
-  border-top-right-radius: 40px;
-  border-top-left-radius: 40px;
-  background: rgba(0, 0, 0, 0);
-}
-#img {
-  width: 100%;
-  height: 150px;
-  overflow: hidden;
-}
-#tit {
-  background: #ffffff;
-  text-decoration: none;
-  font-family: "Times New Roman", Times, serif;
-  color: #130f0f;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
-#inst {
-  background: #ffffff;
-  text-decoration: none;
-  color: #130f0f;
-  font-weight: normal;
-}
+
+
+
+
 
 /* the upcoming part is for details page */
-/* fro the background*/
-.details {
-  margin-top: 20px;
-  background-image: url("/public/images/home-background.svg");
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  overflow-y: hidden;
+
+
+/* fOR the background*/
+.details{
+
+margin-top: 20px;
+background-image: url('/public/images/home-background.svg');
+align-items: center;
+width:100%;
+height: 100%;
+overflow-y: hidden;
 }
 /*for the card background */
 
@@ -100,17 +166,19 @@ body {
   height: 300px;
   margin-left: 35px;
 }
-/*''*/
-.description {
-  font: 30px;
-  float: right;
-  color: #ffff;
-  width: 50%;
-  height: auto;
-  background: rgba(0, 0, 0, 0);
-  margin-right: 35px;
-  margin-left: 30px;
-  margin-bottom: 40px;
+
+/**/
+.description{
+font:30px;
+float:right;
+color:#ffff;
+width: 50%; height: auto;
+background:rgba(0, 0, 0, 0) ;
+margin-right: 35px;
+margin-left:30px;
+margin-bottom: 40px;
+
+
 }
 
 /* this is for title of each div */
@@ -122,91 +190,41 @@ body {
   font-weight: bolder;
 }
 /* for grouping image and description in one div */
-.im-desc {
-  display: flow-root;
-  position: static;
-  background: rgba(0, 0, 0, 0);
-  margin-bottom: 20px;
+
+.im-desc{
+display:flow-root ;
+position: static;
+background:rgba(0, 0, 0, 0) ;
+margin-bottom: 20px;
+}
+/* content of each div F fees , content , instructor , etc */
+.cod{
+color:#ffff;
+font:30px;
+background:rgba(0, 0, 0, 0) ;
+margin-right: 35px;
+margin-left:30px;
+margin-bottom: 20px;
+width:90%; height: auto;
+text-align: left;
+
 }
 
-.content {
-  color: #ffff;
-  font: 30px;
-  background: rgba(0, 0, 0, 0);
-  margin-right: 35px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  width: 90%;
-  height: auto;
-  text-align: left;
+#button:hover {
+background-color: orange;  
 }
-
-.perquisittes {
-  color: #ffff;
-  font: 30px;
-  background: rgba(0, 0, 0, 0);
-  margin-right: 35px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  width: 90%;
-  height: auto;
-  text-align: left;
-}
-.instructor {
-  color: #ffff;
-  font: 30px;
-  background: rgba(0, 0, 0, 0);
-  margin-right: 35px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  width: 90%;
-  height: auto;
-  text-align: left;
-}
-
-.duration {
-  color: #ffff;
-  font: 30px;
-  background: rgba(0, 0, 0, 0);
-  margin-right: 35px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  width: 90%;
-  height: auto;
-  text-align: left;
-}
-
-.fees {
-  color: #ffff;
-  font: 30px;
-  background: rgba(0, 0, 0, 0);
-  margin-right: 35px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  width: 90%;
-  height: auto;
-  text-align: left;
-}
-
-#button-container {
-  background: rgb(63, 8, 8);
-  border: #ba0c2f 0.5px solid;
-  height: 50px;
-  width: 200px;
-  border-radius: 40px;
-  display: block;
-  margin: auto;
-}
-#button-container:hover {
-  background-color: #e65555;
-}
-#button {
-  font: 35px;
-  letter-spacing: 3px;
-  background: rgba(0, 0, 0, 0);
-  color: #ba0c2f;
-  font-weight: bolder;
-  height: 50px;
-  width: 200px;
-  border-radius: 40px;
+#button{
+   margin:auto;
+    color: #1cc49d;
+    background-color: #1b2f31;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 200px;
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border :orangered 0.5px solid ;
 }
