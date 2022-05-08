@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.CommitteBox{
+    color: white;
+    margin-bottom: 40px;
+}
+
+.CommitteBox h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.CommitteBox .CommitteVolunteers {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 40px 30px;
+}
+
+@media (max-width: 640px) {
+    .CommitteBox .CommitteVolunteers {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}

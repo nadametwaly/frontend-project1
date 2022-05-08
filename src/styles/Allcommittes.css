@@ -1,0 +1,49 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Container{
+    background-image: url("/public/images/home-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 75vh;
+}
+
+.Container .AllCommities .heading{
+    text-transform: uppercase;
+    color: #ba0c2f;
+}
+
+.Container .CommitteContainer {
+    padding: 0 50px 100px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 60px;
+}
+
+@media (max-width: 450px) {
+    .container {
+        width: 450px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}

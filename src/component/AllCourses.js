@@ -1,3 +1,4 @@
+
 import React ,{useEffect, useState} from 'react'
 import Course from "./Course";
 import { Link } from "react-router-dom";
@@ -34,9 +35,10 @@ const [courses, setcourses] = useState([])
                 {courses.map((item) => (
           <Link to={`/courses/${item.id}`} >
         <Course {...item} key={item.id} />
+
         </Link>
-                ))}
-     </div>
+      ))}
+    </div>
   );
 };
 
