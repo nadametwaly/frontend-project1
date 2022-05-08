@@ -3,7 +3,6 @@ import Course from "./Course";
 import { Link } from "react-router-dom";
 import '../styles/Courses.css'
 import axios from "axios";
-import {useAxiosGet} from "../Hooks/httpReq";
 
 
 const AllCourses = () => {
