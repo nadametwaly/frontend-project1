@@ -1,11 +1,10 @@
 const Article = (props) => {
   return (
     <div className="ALLARTICLE">
-      <img src={props.image} alt="article"></img>
-      <h2>{props.title}</h2>
-      <p>{props.date}</p>
+      <img src={props.ArticleImage} alt="article"></img>
+      <h2>{props.ArticleName}</h2>
+      <p>{props.ArticleDate}</p>
     </div>
   );
 };
-
-export default Article;
+export default Article

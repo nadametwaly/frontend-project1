@@ -4,6 +4,20 @@ import { useParams } from "react-router-dom";
 
 const ArticleDetails = () => {
   const params = useParams();
+  let content = null
+      let Result = useAxiosGet(url)
+      if (Result.error){
+        content = <p>Error 404</p>
+        }
+        if (Result.data){
+        content =
+        <div className="ArticleDetails">
+           
+           {Result.data.data.map((EachArticle, key) =>
+           
+           )}
+        </div>
+
   return (
     <div className="AllArticleDetails">
       <br></br> <br></br>
